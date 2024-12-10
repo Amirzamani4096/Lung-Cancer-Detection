@@ -6,6 +6,36 @@ Our method utilizes pretrained VGG16 with 5-group convolution as the main featur
 The proposed feature map enters a region proposal network (RPN) and obtains a set of rectangular-shaped nodule proposals, each of which has a score in the output. The proposed network of the region consists of a fully convolutional network. In the false-positive reduction stage, the selected proposed regions are input into a 2D deep convolutional neural network (2D DCNN) is designed to reduce false-positive nodules. 
 
 ## Files Discription
+
+This project encompasses a series of Jupyter notebooks designed for the detection and analysis of lung nodules from CT scan images. The aim is to leverage deep learning techniques to enhance the accuracy of lung nodule detection, which is crucial for early diagnosis and effective treatment. The project includes the following key components:
+
+1- Data_Acquisition.ipynb : 
+
+The purpose of this program is to extract the annotations of each CT scan image from the RTSTRUCT file. The extracted data is then saved in an Excel file. Additionally, the code includes further data analysis and processing of the extracted annotations. In addition, this program extracts the slices containing nodules from the CT scan files and saves them in a folder named Dataset located in the program's directory.
+
+Important Note: In this program, the variable 'root_dir' holds the path to the RTSTRUCT folder, and the variable 'path' holds the path to the folder containing the CT scan files.
+
+2- Dataset_Builder.ipynb:
+
+The purpose of this program is to store all the information from CT scan files containing nodules in a file named 'data.pkl'. This file will later be used as input for model training.
+
+3- RPN_Model.ipynb:
+The goal of this program is to create and train the proposed RPN model.
+
+4- Results_RPN.ipynb:
+The goal of this program is to obtain test results from the trained RPN model.
+
+5- Patch_Builder.ipynb: 
+The goal of running this code is to extract RoIs for input into the FPR model. Accordingly, the image patches along with their labels are stored in the Image_LUNG.pkl and Label_LUNG.pkl files.
+
+6- FPR_Model.ipynb:
+The goal of this program is to create and train the false positive reductin (FPR) model.
+
+7- Results_RPN+FPR.ipynb:
+
+The goal of this program is to obtain test results from the trained RPN+FPR model.
+
+
 ### ML
 #### ML
 
