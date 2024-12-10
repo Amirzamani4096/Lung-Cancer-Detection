@@ -38,10 +38,4 @@ The goal of this program is to create and train the false positive reductin (FPR
 The goal of this program is to obtain test results from the trained RPN+FPR model.
 
 
-### ML
-#### ML
-
-machine learning codes   
-itis mmy repository
-
-[saba](https://github.com/sabadaftari?tab=repositories)
+[Amir Zamanidoost] (https://www.linkedin.com/in/amir-zamanidoost-51bb6b166/)
