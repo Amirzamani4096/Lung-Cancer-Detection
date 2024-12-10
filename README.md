@@ -11,6 +11,8 @@ This project encompasses a series of Jupyter notebooks designed for the detectio
 
 1- Data_Acquisition.ipynb : 
 
+This collection contains images from 422 non-small cell lung cancer (NSCLC) patients. For these patients, pre-treatment CT scans, manual delineation by a radiation oncologist of the 3D volume of the gross tumor volume, and clinical outcome data are available. The DICOM Radiotherapy Structure Sets (RTSTRUCT) in this data contain the annotation by a radiation oncologist. 
+
 The purpose of this program is to extract the annotations of each CT scan image from the RTSTRUCT file. The extracted data is then saved in an Excel file. Additionally, the code includes further data analysis and processing of the extracted annotations. In addition, this program extracts the slices containing nodules from the CT scan files and saves them in a folder named Dataset located in the program's directory.
 
 Important Note: In this program, the variable 'root_dir' holds the path to the RTSTRUCT folder, and the variable 'path' holds the path to the folder containing the CT scan files.
